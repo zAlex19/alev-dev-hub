@@ -17,6 +17,9 @@ Current work includes modular Roblox systems for:
 
 A standalone Pet System package is currently being polished as a reusable product/demo. Play-mode QA has already been used to verify its server bootstrap and remote surface.
 
+Public code sample:
+- [Strict Luau RequestGuard](demos/roblox-request-guard/README.md) — per-player token-bucket request limiting plus overlapping-action locks for server-side remote handling.
+
 ## Python
 
 - [Python bug-fix sample](demos/python-bug-fix-query-params/README.md) — reproduce a falsey-value query bug, apply the minimal fix, and add regression coverage.
