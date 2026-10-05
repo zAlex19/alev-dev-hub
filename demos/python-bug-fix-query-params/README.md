@@ -1,12 +1,12 @@
 # Python Bug Fix Demo — Falsey Query Parameters
 
-Self-directed bug-fix sample showing a small, reproducible Python defect and a regression test.
+Self-directed bug-fix sample showing a small, reproducible Python defect, the minimal fix, and a regression test.
 
-## Bug report
+## Problem
 
-A helper that builds HTTP query strings is supposed to omit only values that are actually missing (`None`).
+An HTTP query-string helper was supposed to omit only missing values (`None`).
 
-Instead, valid falsey values such as `0`, `False`, and an empty string are also dropped.
+The original implementation filtered values by truthiness, so valid values such as `0`, `False`, and an empty string were silently dropped.
 
 Example input:
 
@@ -20,20 +20,47 @@ Expected:
 limit=0&active=False&q=
 ```
 
-Buggy result: an empty query string.
+Original result: an empty query string.
 
-## Reproduce
+## Root cause
 
-From this folder:
+The buggy filter used:
+
+```python
+if value
+```
+
+That treats every falsey value as missing.
+
+## Fix
+
+The filter now checks only for `None`:
+
+```python
+if value is not None
+```
+
+This preserves legitimate falsey values while still omitting missing parameters.
+
+## Regression test
+
+Run from this folder:
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-The regression test fails on the buggy implementation.
+The tests cover:
 
-## Goal
+- preserving `0`, `False`, and `""`
+- omitting `None`
+- preserving normal parameters
 
-Change the smallest possible amount of code so that `None` is omitted, valid falsey values are preserved, and the regression suite passes.
+## What this sample demonstrates
 
-The next commit contains the fix.
+- reproducing a concrete bug
+- identifying the smallest safe change
+- adding a regression test
+- verifying existing behavior remains intact
+
+This is a self-directed technical sample, not claimed client work.
