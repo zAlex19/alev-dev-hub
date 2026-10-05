@@ -1,0 +1,30 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+
+# Build / caches
+dist/
+build/
+__pycache__/
+*.pyc
+.pytest_cache/
+coverage/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Runtime / client data
+workspaces/
+client-jobs/
+backups/
+logs/
+tmp/
