@@ -25,9 +25,15 @@ Typical flow:
 
 Small jobs are welcome.
 
+## Featured bug-fix sample
+
+[Python: reproduce a falsey-value query bug, apply the minimal fix, and add regression coverage](demos/python-bug-fix-query-params/README.md)
+
+The commit history shows the buggy reproduction first and the tested fix in the following commit.
+
 ## Current technical demos
 
-This account is new to freelance work, so I do not claim client history I do not have. I can share code samples and small technical demos for Python automation, API work and development tooling on request.
+This account is new to freelance work, so I do not claim client history I do not have. The repository contains self-directed technical samples that demonstrate the work directly.
 
 ## Contact
 
