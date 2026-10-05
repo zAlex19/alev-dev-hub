@@ -1,0 +1,8 @@
+{
+  "name": "alev-web-double-submit-fix",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  }
+}
