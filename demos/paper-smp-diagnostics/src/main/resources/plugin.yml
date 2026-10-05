@@ -1,0 +1,15 @@
+name: SMPDiagnostics
+version: 1.0.0
+main: dev.alev.smpdiag.SmpDiagnosticsPlugin
+api-version: '1.21'
+author: AlevDev
+description: Read-only Paper SMP diagnostics for TPS, world load, and plugin presence.
+commands:
+  smpdiag:
+    description: Show read-only SMP diagnostics.
+    usage: /smpdiag [summary|worlds|plugins|help]
+    permission: smpdiag.use
+permissions:
+  smpdiag.use:
+    description: Allows use of SMPDiagnostics.
+    default: op
