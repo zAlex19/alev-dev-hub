@@ -1,0 +1,15 @@
+{
+  "name": "alev-discord-ops-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "test": "node --test",
+    "check": "node --check src/index.mjs && node --check src/health.mjs"
+  },
+  "dependencies": {
+    "discord.js": "^14.22.1",
+    "dotenv": "^16.6.1"
+  }
+}
