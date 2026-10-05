@@ -1,0 +1,10 @@
+{
+  "name": "alev-secure-webhook-receiver",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "start": "node src/server.mjs",
+    "check": "node --check src/server.mjs && node --check src/webhook.mjs"
+  }
+}
