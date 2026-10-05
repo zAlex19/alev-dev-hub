@@ -7,9 +7,12 @@ Developer focused on automation, APIs, Roblox/Luau systems, debugging and server
 - Roblox Studio / Luau systems, debugging and integration
 - Python scripts, bug fixes and automation
 - JavaScript / web bug fixes
+- Node.js APIs and webhook integrations
 - Google Sheets + Apps Script workflows
 - n8n / webhook automation
 - Discord bots and API integrations
+- WordPress/PHP fixes and small integrations
+- Browser extension utilities
 - Paper / Minecraft plugin and server tooling
 - Existing-project bug fixes and focused feature work
 - Testing, logs, diagnostics and cleanup
@@ -22,9 +25,12 @@ Featured samples:
 
 - [Python bug fix with regression coverage](demos/python-bug-fix-query-params/README.md)
 - [Web / JS duplicate-submit bug fix](demos/web-js-double-submit-fix/README.md)
+- [Secure Node.js webhook receiver](demos/node-secure-webhook-receiver/README.md)
 - [Google Apps Script lead router](demos/google-apps-script-lead-router/README.md)
 - [n8n lead intake workflow](demos/n8n-lead-intake/README.md)
 - [Discord ops bot](demos/discord-ops-bot/README.md)
+- [WordPress contact webhook plugin](demos/wordpress-contact-webhook/README.md)
+- [Browser extension sample](demos/browser-extension-page-link/README.md)
 - [Roblox Luau RequestGuard](demos/roblox-request-guard/README.md)
 - [Paper SMP diagnostics plugin](demos/paper-smp-diagnostics/README.md)
 

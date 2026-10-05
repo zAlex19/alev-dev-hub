@@ -4,20 +4,10 @@ This repository contains self-directed technical samples and active development 
 
 ## Roblox / Luau
 
-Current work includes modular Roblox systems for:
-
-- persistent player data and session-safe saving
-- currencies, progression and rebirth/economy systems
-- pet hatching, weighted rarity/luck, inventory and equip flows
-- lock/favorite/delete and Base → Golden → Rainbow crafting
-- server-authoritative validation and rate limiting
-- gamepasses / developer-product logic
-- daily rewards, codes, potions and automation systems
-- leaderboard and world/teleport progression infrastructure
+Current work includes modular Roblox systems for persistent data, progression/economy, pet RNG/inventory/crafting, server validation, monetization, rewards/automation, leaderboards and world progression.
 
 A standalone Pet System package is currently being polished as a reusable product/demo. Play-mode QA has already been used to verify its server bootstrap and remote surface.
 
-Public code sample:
 - [Strict Luau RequestGuard](demos/roblox-request-guard/README.md) — per-player token-bucket request limiting plus overlapping-action locks for server-side remote handling.
 
 ## Python
@@ -26,20 +16,26 @@ Public code sample:
 
 ## JavaScript / Web
 
-- [Duplicate form submission bug fix](demos/web-js-double-submit-fix/README.md) — reproduces a race condition, adds a failing regression test, applies a minimal in-flight guard and verifies recovery after API failures.
+- [Duplicate form submission bug fix](demos/web-js-double-submit-fix/README.md) — reproduced race condition, regression test, minimal fix and failure recovery.
+- [Node.js Secure Webhook Receiver](demos/node-secure-webhook-receiver/README.md) — HMAC verification, timing-safe comparison, event IDs, replay/idempotency protection, body limits and tests.
+- [Browser Extension Page Link](demos/browser-extension-page-link/README.md) — small Manifest V3 utility with a minimal permission surface and test-covered formatting logic.
 
 ## Automation / Google Workspace
 
-- [Google Sheets + Apps Script Lead Router](demos/google-apps-script-lead-router/README.md) — validates and deduplicates incoming leads, routes them by budget, creates an audit trail and includes trigger/self-test helpers.
+- [Google Sheets + Apps Script Lead Router](demos/google-apps-script-lead-router/README.md) — email validation, deduplication, budget routing, audit trail and trigger/self-test helpers.
 - [n8n Lead Intake Workflow](demos/n8n-lead-intake/README.md) — webhook intake, normalization, validation and deterministic routing with test-covered core logic.
 
 ## Discord / Integrations
 
-- [Discord Ops Bot](demos/discord-ops-bot/README.md) — slash commands for ping/status/notifications, dependency health checks, bounded input and permission-gated operations messaging.
+- [Discord Ops Bot](demos/discord-ops-bot/README.md) — slash commands for ping/status/notifications, dependency health checks, bounded input and permission-gated messaging.
+
+## WordPress / PHP
+
+- [WordPress Contact Form → Webhook](demos/wordpress-contact-webhook/README.md) — settings, shortcode, nonce validation, sanitization, honeypot, safe remote POST and clean uninstall behavior.
 
 ## Paper / Minecraft
 
-- [SMPDiagnostics](demos/paper-smp-diagnostics/README.md) — a small read-only Paper plugin sample for TPS/MSPT, world-load and plugin diagnostics. Designed to inspect first rather than randomly mutate server configuration.
+- [SMPDiagnostics](demos/paper-smp-diagnostics/README.md) — read-only Paper diagnostics for TPS/MSPT, world load and plugin presence.
 
 ## Working style
 
@@ -47,4 +43,4 @@ Best fit is clear development work where requirements can be discussed primarily
 
 ## White-label / overflow fit
 
-I am especially interested in scoped overflow work where an agency or studio owns the client relationship and sends implementation tickets for delivery. Strongest current fit includes bug fixes, automation/webhooks, backend/integration work, Roblox systems and Paper/Minecraft tooling.
+I am especially interested in scoped overflow work where an agency or studio owns the client relationship and sends implementation tickets for delivery. Current coverage includes bug fixes, automation/webhooks, Node/API work, Apps Script, n8n, Discord, WordPress, browser utilities, Roblox systems and Paper/Minecraft tooling.
