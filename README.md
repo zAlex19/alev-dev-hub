@@ -23,6 +23,7 @@ See [PORTFOLIO.md](PORTFOLIO.md) for current systems and code samples.
 
 Featured samples:
 
+- [Roblox Shop & Game Pass System — video demo](demos/roblox-shop-gamepass-system/README.md)
 - [Python bug fix with regression coverage](demos/python-bug-fix-query-params/README.md)
 - [Web / JS duplicate-submit bug fix](demos/web-js-double-submit-fix/README.md)
 - [Secure Node.js webhook receiver](demos/node-secure-webhook-receiver/README.md)
@@ -50,7 +51,7 @@ Written/async communication is preferred, with progress updates. Occasional call
 
 ## Current technical work
 
-This account is new to freelance work, so I do not claim paid-client history I do not have. The repository contains self-directed technical samples and active project work that demonstrate the work directly.
+This account is new to freelance work, and I am currently completing paid Roblox systems work. This repository focuses on concrete demos and technical samples that show the work directly without exposing private client code or assets.
 
 ## Contact
 
