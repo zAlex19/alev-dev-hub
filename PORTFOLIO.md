@@ -1,6 +1,6 @@
 # AlevDev — Technical Portfolio
 
-This repository contains self-directed technical samples and active development work. I do not claim paid-client history that I cannot verify.
+I am currently completing paid Roblox systems work alongside self-directed technical samples and active development projects. Public demos here focus on work I can show without exposing private client code or assets.
 
 ## Roblox / Luau
 
@@ -8,6 +8,7 @@ Current work includes modular Roblox systems for persistent data, progression/ec
 
 A standalone Pet System package is currently being polished as a reusable product/demo. Play-mode QA has already been used to verify its server bootstrap and remote surface.
 
+- [Roblox Shop & Game Pass System](demos/roblox-shop-gamepass-system/README.md) — functional shop UI, native Roblox purchase flow, ownership handling, client/server integration and Studio QA. Includes a public video demo.
 - [Strict Luau RequestGuard](demos/roblox-request-guard/README.md) — per-player token-bucket request limiting plus overlapping-action locks for server-side remote handling.
 
 ## Python
